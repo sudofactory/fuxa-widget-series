@@ -18,5 +18,3 @@ FUXA is free and open source: <https://github.com/frangoteam/FUXA>
 
 Opening a project file in FUXA replaces the project you have open, so save a copy of yours first (Save Project As).
 開啟專案檔會取代你目前的專案，請先用 Save Project As 備份。
-
-Yottacontrol Co. 巨控自動化
