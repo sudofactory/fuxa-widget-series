@@ -9,7 +9,7 @@ YouTube 系列《FUXA Web SCADA for Beginners》的專案檔：每集一個 FUXA
 |---|---|---|
 | 1 · Door sign | Select value | [ep1-door-sign](ep1-door-sign/) |
 | 2 · Opening hours | Time Scheduler | [ep2-opening-hours](ep2-opening-hours/) |
-| 3 | Table | coming soon |
+| 3 · Boba log | Table | [ep3-boba-log](ep3-boba-log/) |
 | 4 | Video | coming soon |
 | 5 | Recipe | coming soon |
 | 6 | Panel | coming soon |
