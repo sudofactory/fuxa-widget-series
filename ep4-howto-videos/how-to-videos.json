@@ -1,0 +1,1175 @@
+{
+  "devices": {
+    "0": {
+      "id": "0",
+      "name": "FUXA Server",
+      "type": "FuxaServer",
+      "property": {},
+      "polling": 1000,
+      "enabled": true,
+      "tags": {
+        "t_896217bb-add445c0": {
+          "id": "t_896217bb-add445c0",
+          "name": "door_mode",
+          "value": 0,
+          "type": "number",
+          "format": null,
+          "daq": {
+            "enabled": false,
+            "restored": true
+          },
+          "init": "0",
+          "scale": {
+            "rawLow": null,
+            "rawHigh": null,
+            "scaledLow": null,
+            "scaledHigh": null,
+            "dateTimeFormat": null,
+            "readExpression": null,
+            "writeExpression": null
+          },
+          "scaleReadFunction": null,
+          "scaleWriteFunction": null,
+          "description": null,
+          "unsPath": null,
+          "timestamp": 1794970678011
+        },
+        "t_00428254-405a4cbc": {
+          "id": "t_00428254-405a4cbc",
+          "name": "open_hours",
+          "value": true,
+          "type": "boolean",
+          "daq": {
+            "enabled": false,
+            "interval": 60,
+            "changed": false,
+            "restored": false
+          },
+          "init": null,
+          "description": null,
+          "timestamp": 1794970678011
+        },
+        "t_22991f01-9eee4767": {
+          "id": "t_22991f01-9eee4767",
+          "name": "boba_batches",
+          "value": null,
+          "type": "number",
+          "daq": {
+            "enabled": true,
+            "interval": 0,
+            "changed": true,
+            "restored": true
+          },
+          "init": null,
+          "description": null,
+          "format": null,
+          "scale": {
+            "rawLow": null,
+            "rawHigh": null,
+            "scaledLow": null,
+            "scaledHigh": null,
+            "dateTimeFormat": null,
+            "readExpression": null,
+            "writeExpression": null
+          },
+          "scaleReadFunction": null,
+          "scaleWriteFunction": null,
+          "unsPath": null
+        },
+        "t_ba874ae3-07da4f3a": {
+          "id": "t_ba874ae3-07da4f3a",
+          "name": "video_url",
+          "value": "/_images/how-to/cup_sealer.mp4",
+          "type": "string",
+          "daq": {
+            "enabled": false,
+            "interval": 60,
+            "changed": false,
+            "restored": false
+          },
+          "init": "/_images/how-to/cup_sealer.mp4",
+          "description": null,
+          "timestamp": 1795148498269
+        },
+        "t_1d5eccce-8fd44e71": {
+          "id": "t_1d5eccce-8fd44e71",
+          "name": "video_play",
+          "value": null,
+          "type": "number",
+          "daq": {
+            "enabled": false,
+            "interval": 60,
+            "changed": false,
+            "restored": false
+          },
+          "init": null,
+          "description": null
+        }
+      }
+    }
+  },
+  "hmi": {
+    "views": [
+      {
+        "id": "v_098a448b-b707",
+        "name": "MainView",
+        "profile": {
+          "width": 768,
+          "height": 1000,
+          "bkcolor": "#ffffffff",
+          "margin": 10,
+          "align": "topCenter",
+          "gridType": "fixed",
+          "viewRenderDelay": 0
+        },
+        "items": {
+          "HXS_9d4c30fc-8c9e484c": {
+            "id": "HXS_9d4c30fc-8c9e484c",
+            "type": "svg-ext-html_select",
+            "name": "select_1",
+            "property": {
+              "variableId": "t_896217bb-add445c0",
+              "ranges": [
+                {
+                  "min": "0",
+                  "max": "0",
+                  "text": "Open",
+                  "color": "#2e7d32ff",
+                  "type": 4,
+                  "stroke": "#fbf8f8ff"
+                },
+                {
+                  "min": "1",
+                  "max": "1",
+                  "text": "Back in 5 min",
+                  "color": "#f9a825ff",
+                  "type": 4,
+                  "stroke": "#000000ff"
+                },
+                {
+                  "min": "2",
+                  "max": "2",
+                  "text": "Closed",
+                  "color": "#c62828ff",
+                  "type": 4,
+                  "stroke": "#fbf8f8ff"
+                }
+              ],
+              "events": [],
+              "actions": []
+            },
+            "label": "HtmlSelect",
+            "hide": false,
+            "lock": false
+          }
+        },
+        "variables": {},
+        "svgcontent": "<svg width=\"768\" height=\"1000\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns:html=\"http://www.w3.org/1999/xhtml\">\n <filter height=\"200\" width=\"200\" y=\"-3\" x=\"-3\" id=\"blur-filter\">\n  <feGaussianBlur stdDeviation=\"3\"/>\n </filter>\n <g>\n  <title>Layer 1</title>\n  <g data-name=\"select_1\" stroke=\"#000000\" fill=\"#FFFFFF\" type=\"svg-ext-html_select\" id=\"HXS_9d4c30fc-8c9e484c\">\n   <rect stroke=\"#000000\" id=\"svg_2b0b27dc-dde54616\" fill=\"#094BAC\" height=\"179\" width=\"638.99999\" y=\"160\" x=\"64\" stroke-width=\"0\"/>\n   <foreignObject font-size=\"64\" id=\"H-HXS_ebf52f07-64be45d0\" width=\"638.99999\" height=\"179\" y=\"160\" x=\"64\">\n    <SELECT style=\"width: 100%; height: 100%; text-align: center; margin-top: unset; background-color: rgb(9, 75, 172); color: rgb(0, 0, 0); font-size: 64px; font-family: sans-serif; vector-effect: non-scaling-stroke; appearance: menulist; text-align-last: center;\" id=\"S-HXS_ebf52f07-64be45d0\">\n     <OPTION>Choose...</OPTION>\n    </SELECT>\n   </foreignObject>\n  </g>\n </g>\n</svg>",
+        "type": "svg",
+        "property": {
+          "events": [],
+          "actions": []
+        }
+      },
+      {
+        "id": "v_811354ab10-10610",
+        "name": "Opening hours",
+        "profile": {
+          "width": 1024,
+          "height": 768,
+          "bkcolor": "#ffffffff",
+          "margin": 10,
+          "align": "topCenter",
+          "gridType": "fixed",
+          "viewRenderDelay": 0
+        },
+        "items": {
+          "OXC_bcc84ec1-f3e7499d": {
+            "id": "OXC_bcc84ec1-f3e7499d",
+            "type": "svg-ext-own_ctrl-scheduler",
+            "name": "scheduler_1",
+            "property": {
+              "id": null,
+              "devices": [
+                {
+                  "variableId": "t_00428254-405a4cbc",
+                  "name": "Opening hours"
+                }
+              ],
+              "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "accent": "#2196f3",
+                "border": "#cccccc"
+              },
+              "accentColor": "#556e82",
+              "backgroundColor": "#f0f0f0",
+              "borderColor": "#cccccc",
+              "textColor": "#505050",
+              "secondaryTextColor": "#ffffff",
+              "hoverColor": "#f5f5f5",
+              "timeFormat": "12hr",
+              "deviceActions": []
+            },
+            "label": "HtmlScheduler",
+            "hide": false,
+            "lock": false
+          }
+        },
+        "variables": {},
+        "svgcontent": "<svg width=\"1024\" height=\"768\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns:html=\"http://www.w3.org/1999/xhtml\">\n <filter id=\"blur-filter\" x=\"-3\" y=\"-3\" width=\"200\" height=\"200\">\n  <feGaussianBlur stdDeviation=\"3\"/>\n </filter>\n <g>\n  <title>Layer 1</title>\n  <g data-name=\"scheduler_1\" stroke=\"#000000\" id=\"OXC_bcc84ec1-f3e7499d\" type=\"svg-ext-own_ctrl-scheduler\" fill=\"#FFFFFF\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"right\">\n   <rect data-initialized=\"true\" stroke=\"null\" stroke-width=\"0\" x=\"218\" y=\"64\" width=\"588\" height=\"640\" id=\"svg_4b6e3f15-85fb4d4f\" fill=\"#f9f9f9ff\"/>\n   <foreignObject x=\"218\" y=\"64\" height=\"640\" width=\"588\" id=\"H-OXC_f2f30c5e-630346cf\">\n    <DIV style=\"width: 100%; height: 100%; vector-effect: non-scaling-stroke;\" id=\"D-OXC_f2f30c5e-630346cf\">\n     <APP-SCHEDULER class=\"ng-star-inserted\">\n      <DIV class=\"scheduler-container\">\n       <DIV class=\"scheduler-header\">\n        <!---->\n        <DIV class=\"device-name ng-star-inserted\">Opening hours</DIV>\n        <!---->\n        <DIV class=\"header-actions\">\n         <BUTTON class=\"status-btn ng-star-inserted active\">\n          <SPAN class=\"material-icons\">alarm_on</SPAN>\n         </BUTTON>\n         <!---->\n         <!---->\n         <DIV class=\"ng-star-inserted\">\n          <BUTTON class=\"action-btn ng-star-inserted\">\n           <SPAN class=\"material-icons\">add</SPAN>\n          </BUTTON>\n          <!---->\n          <!---->\n         </DIV>\n         <!---->\n        </DIV>\n       </DIV>\n       <DIV class=\"schedule-display ng-star-inserted\">\n        <DIV class=\"device-mode ng-star-inserted\">\n         <DIV class=\"device-scroll-container has-scrollbar\">\n          <DIV class=\"mode-section ng-star-inserted\">\n           <DIV class=\"schedule-headers\">\n            <DIV class=\"header-row\">\n             <SPAN class=\"header-cell schedule-num\">#</SPAN>\n             <SPAN class=\"header-cell start-time\">Start</SPAN>\n             <SPAN class=\"header-cell end-time\">Mode</SPAN>\n             <SPAN class=\"header-cell duration\">Duration</SPAN>\n             <SPAN class=\"header-cell status\">Status</SPAN>\n             <SPAN class=\"header-cell actions\"></SPAN>\n            </DIV>\n           </DIV>\n           <DIV class=\"schedule-list\">\n            <DIV style=\"cursor: pointer; pointer-events: auto;\" class=\"schedule-item ng-star-inserted\">\n             <DIV class=\"schedule-main-row\">\n              <SPAN class=\"schedule-number\">1</SPAN>\n              <SPAN class=\"start-time\">8:00\n               <SPAN class=\"time-period\">am</SPAN></SPAN>\n              <SPAN class=\"end-time\">6:00\n               <SPAN class=\"time-period\">pm</SPAN></SPAN>\n              <SPAN class=\"duration\">10h 0m</SPAN>\n              <DIV class=\"status-switch\">\n               <LABEL class=\"switch\">\n                <INPUT type=\"checkbox\"/>\n                <SPAN class=\"slider\"></SPAN>\n               </LABEL>\n              </DIV>\n              <DIV class=\"actions\">\n               <BUTTON class=\"delete-btn ng-star-inserted\" type=\"button\">\n                <SPAN class=\"material-icons\">clear</SPAN>\n               </BUTTON>\n               <!---->\n              </DIV>\n             </DIV>\n             <DIV class=\"days-display ng-star-inserted\">\n              <SPAN title=\"Sunday\" class=\"day-circle ng-star-inserted\">S</SPAN>\n              <SPAN title=\"Monday\" class=\"day-circle active ng-star-inserted\">M</SPAN>\n              <SPAN title=\"Tuesday\" class=\"day-circle active ng-star-inserted\">T</SPAN>\n              <SPAN title=\"Wednesday\" class=\"day-circle active ng-star-inserted\">W</SPAN>\n              <SPAN title=\"Thursday\" class=\"day-circle active ng-star-inserted\">T</SPAN>\n              <SPAN title=\"Friday\" class=\"day-circle active ng-star-inserted\">F</SPAN>\n              <SPAN title=\"Saturday\" class=\"day-circle active ng-star-inserted\">S</SPAN>\n              <!---->\n             </DIV>\n             <!---->\n             <!---->\n            </DIV>\n            <!---->\n           </DIV>\n          </DIV>\n          <!---->\n          <!---->\n         </DIV>\n         <!---->\n        </DIV>\n        <!---->\n        <!---->\n       </DIV>\n       <!---->\n       <!---->\n       <DIV class=\"editor-placeholder ng-star-inserted\">\n        <SPAN class=\"material-icons\">schedule</SPAN>\n        <P>Time Scheduler</P>\n        <SMALL>Configure in properties panel</SMALL>\n       </DIV>\n       <!---->\n       <!---->\n      </DIV>\n     </APP-SCHEDULER>\n    </DIV>\n   </foreignObject>\n  </g>\n </g>\n</svg>",
+        "type": "svg"
+      },
+      {
+        "id": "v_ep2-door-hours",
+        "name": "Door sign",
+        "profile": {
+          "width": 1024,
+          "height": 768,
+          "bkcolor": "#ffffffff",
+          "margin": 10,
+          "align": "topCenter",
+          "gridType": "fixed",
+          "viewRenderDelay": 0
+        },
+        "items": {
+          "svg_64bb847d-49e94883-h": {
+            "id": "svg_64bb847d-49e94883-h",
+            "type": "svg-ext-shapes-rect",
+            "name": "shape_1",
+            "property": {
+              "variableId": "t_896217bb-add445c0",
+              "ranges": [
+                {
+                  "min": 0,
+                  "max": 0,
+                  "color": "#2e7d32ff",
+                  "type": 2,
+                  "stroke": "#2e7d32ff"
+                },
+                {
+                  "min": 1,
+                  "max": 1,
+                  "color": "#f9a825ff",
+                  "type": 2,
+                  "stroke": "#f9a825ff"
+                },
+                {
+                  "min": 2,
+                  "max": 2,
+                  "color": "#c62828ff",
+                  "type": 2,
+                  "stroke": "#c62828ff"
+                }
+              ],
+              "events": [],
+              "actions": []
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          },
+          "svg_fe89dd07-8b3f4f8c-h": {
+            "id": "svg_fe89dd07-8b3f4f8c-h",
+            "type": "svg-ext-shapes-select",
+            "name": "shape_2",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "type": "show",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "type": "hide",
+                  "options": {}
+                }
+              ]
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          },
+          "svg_b3d8a18b-69ad4305-h": {
+            "id": "svg_b3d8a18b-69ad4305-h",
+            "type": "svg-ext-shapes-select",
+            "name": "shape_3",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "type": "show",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "type": "hide",
+                  "options": {}
+                }
+              ]
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          },
+          "svg_4618738f-abd14bed-h": {
+            "id": "svg_4618738f-abd14bed-h",
+            "type": "svg-ext-shapes-select",
+            "name": "shape_4",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 1,
+                    "max": 1
+                  },
+                  "type": "show",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "type": "hide",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "type": "hide",
+                  "options": {}
+                }
+              ]
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          },
+          "svg_751fe486-b29c495f-h": {
+            "id": "svg_751fe486-b29c495f-h",
+            "type": "svg-ext-shapes-select",
+            "name": "shape_5",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 1,
+                    "max": 1
+                  },
+                  "type": "show",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "type": "hide",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "type": "hide",
+                  "options": {}
+                }
+              ]
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          },
+          "svg_cf4b181d-e11f4d48-h": {
+            "id": "svg_cf4b181d-e11f4d48-h",
+            "type": "svg-ext-shapes-select",
+            "name": "shape_6",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "type": "show",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "type": "hide",
+                  "options": {}
+                }
+              ]
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          },
+          "svg_d3ad434b-d17c4d3e-h": {
+            "id": "svg_d3ad434b-d17c4d3e-h",
+            "type": "svg-ext-shapes-select",
+            "name": "shape_7",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "type": "show",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_896217bb-add445c0",
+                  "range": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "type": "hide",
+                  "options": {}
+                }
+              ]
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          },
+          "svg_ep2closed-rect-h": {
+            "id": "svg_ep2closed-rect-h",
+            "type": "svg-ext-shapes-rect",
+            "name": "",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_00428254-405a4cbc",
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "type": "show",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_00428254-405a4cbc",
+                  "range": {
+                    "min": 1,
+                    "max": 1
+                  },
+                  "type": "hide",
+                  "options": {}
+                }
+              ]
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          },
+          "svg_ep2closed-big-h": {
+            "id": "svg_ep2closed-big-h",
+            "type": "svg-ext-shapes-select",
+            "name": "",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_00428254-405a4cbc",
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "type": "show",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_00428254-405a4cbc",
+                  "range": {
+                    "min": 1,
+                    "max": 1
+                  },
+                  "type": "hide",
+                  "options": {}
+                }
+              ]
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          },
+          "svg_ep2closed-small-h": {
+            "id": "svg_ep2closed-small-h",
+            "type": "svg-ext-shapes-select",
+            "name": "",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_00428254-405a4cbc",
+                  "range": {
+                    "min": 0,
+                    "max": 0
+                  },
+                  "type": "show",
+                  "options": {}
+                },
+                {
+                  "variableId": "t_00428254-405a4cbc",
+                  "range": {
+                    "min": 1,
+                    "max": 1
+                  },
+                  "type": "hide",
+                  "options": {}
+                }
+              ]
+            },
+            "label": "Shapes",
+            "hide": false,
+            "lock": false
+          }
+        },
+        "variables": {},
+        "svgcontent": "<svg width=\"1024\" height=\"768\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:svg=\"http://www.w3.org/2000/svg\">\n <filter id=\"blur-filter\" x=\"-3\" y=\"-3\" width=\"200\" height=\"200\">\n  <feGaussianBlur stdDeviation=\"3\"/>\n </filter>\n <g>\n  <title>Layer 1</title>\n  <rect data-name=\"shape_1\" stroke=\"#000000\" id=\"svg_64bb847d-49e94883-h\" height=\"766\" width=\"1022\" y=\"1\" x=\"1\" fill=\"#808080\"/>\n  <text data-name=\"shape_2\" xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"110\" id=\"svg_fe89dd07-8b3f4f8c-h\" y=\"400\" x=\"512\" stroke-width=\"0\" stroke=\"#000000\" fill=\"#FFFFFF\">OPEN</text>\n  <text data-name=\"shape_3\" xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"44\" id=\"svg_b3d8a18b-69ad4305-h\" y=\"500\" x=\"512\" stroke-width=\"0\" stroke=\"#000000\" fill=\"#FFFFFF\">Come on in</text>\n  <text data-name=\"shape_4\" xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"110\" id=\"svg_4618738f-abd14bed-h\" y=\"400\" x=\"512\" stroke-width=\"0\" stroke=\"#000000\" fill=\"#000000\">BACK IN 5 MIN</text>\n  <text data-name=\"shape_5\" xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"44\" id=\"svg_751fe486-b29c495f-h\" y=\"500\" x=\"512\" stroke-width=\"0\" stroke=\"#000000\" fill=\"#000000\">Be right back</text>\n  <text data-name=\"shape_6\" xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"110\" id=\"svg_cf4b181d-e11f4d48-h\" y=\"400\" x=\"512\" stroke-width=\"0\" stroke=\"#000000\" fill=\"#FFFFFF\">CLOSED</text>\n  <text data-name=\"shape_7\" xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"44\" id=\"svg_d3ad434b-d17c4d3e-h\" y=\"500\" x=\"512\" stroke-width=\"0\" stroke=\"#000000\" fill=\"#FFFFFF\">See you tomorrow</text>\n  <rect stroke=\"#B92D3A\" id=\"svg_ep2closed-rect-h\" height=\"766\" width=\"1022\" y=\"1\" x=\"1\" fill=\"#B92D3A\"/>\n  <text xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"110\" id=\"svg_ep2closed-big-h\" y=\"400\" x=\"512\" stroke-width=\"0\" stroke=\"#000000\" fill=\"#FFFFFF\">CLOSED</text>\n  <text xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"44\" id=\"svg_ep2closed-small-h\" y=\"500\" x=\"512\" stroke-width=\"0\" stroke=\"#000000\" fill=\"#FFFFFF\">See you tomorrow</text>\n </g>\n</svg>",
+        "type": "svg"
+      },
+      {
+        "id": "v_ep3-boba-log",
+        "name": "Boba log",
+        "profile": {
+          "width": 1024,
+          "height": 768,
+          "bkcolor": "#FFF3DC",
+          "margin": 10,
+          "align": "topCenter",
+          "gridType": "fixed",
+          "viewRenderDelay": 0
+        },
+        "items": {
+          "HXB_11b245bf-10b34d31": {
+            "id": "HXB_11b245bf-10b34d31",
+            "type": "svg-ext-html_button",
+            "name": "button_1",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [
+                {
+                  "type": "click",
+                  "action": "onSetValue",
+                  "actparam": "1",
+                  "actoptions": {
+                    "function": "add",
+                    "variable": {
+                      "variableId": "t_22991f01-9eee4767",
+                      "variableRaw": {
+                        "id": "t_22991f01-9eee4767",
+                        "name": "boba_batches",
+                        "value": 0,
+                        "type": "number",
+                        "daq": {
+                          "enabled": true,
+                          "interval": 0,
+                          "changed": true,
+                          "restored": true
+                        },
+                        "init": null,
+                        "description": null,
+                        "timestamp": 1794886617949,
+                        "format": null,
+                        "scale": {
+                          "rawLow": null,
+                          "rawHigh": null,
+                          "scaledLow": null,
+                          "scaledHigh": null,
+                          "dateTimeFormat": null,
+                          "readExpression": null,
+                          "writeExpression": null
+                        },
+                        "scaleReadFunction": null,
+                        "scaleWriteFunction": null,
+                        "unsPath": null
+                      }
+                    }
+                  }
+                }
+              ],
+              "actions": [],
+              "text": "New batch",
+              "style": null
+            },
+            "label": "HtmlButton",
+            "hide": false,
+            "lock": false
+          },
+          "OXC_c4120277-10144e5b": {
+            "id": "OXC_c4120277-10144e5b",
+            "type": "svg-ext-own_ctrl-table",
+            "name": "table_1",
+            "property": {
+              "id": null,
+              "type": "history",
+              "options": {
+                "paginator": {
+                  "show": false
+                },
+                "filter": {
+                  "show": false
+                },
+                "daterange": {
+                  "show": true
+                },
+                "realtime": false,
+                "lastRange": "last1d",
+                "gridColor": "#EADBC4",
+                "header": {
+                  "show": true,
+                  "height": 44,
+                  "fontSize": 18,
+                  "background": "#F4E3C8",
+                  "color": "#7B4B2A"
+                },
+                "row": {
+                  "height": 44,
+                  "fontSize": 18,
+                  "background": "#FFFFFF",
+                  "color": "#3B2A1E"
+                },
+                "selection": {
+                  "background": "#D9A066",
+                  "color": "#FFFFFF",
+                  "fontBold": true
+                },
+                "columns": [
+                  {
+                    "id": "c_136034bb8-2b613",
+                    "label": "Cooked at",
+                    "type": "timestamp",
+                    "align": "left",
+                    "width": 260
+                  },
+                  {
+                    "id": "c_811034993-61236",
+                    "label": "Batch #",
+                    "type": "variable",
+                    "align": "left",
+                    "width": 140,
+                    "variableId": "t_22991f01-9eee4767"
+                  }
+                ],
+                "alarmsColumns": [],
+                "alarmFilter": {
+                  "filterA": [],
+                  "filterB": [],
+                  "filterC": []
+                },
+                "reportsColumns": [],
+                "reportFilter": {
+                  "filterA": []
+                },
+                "rows": []
+              },
+              "events": []
+            },
+            "label": "HtmlTable",
+            "hide": false,
+            "lock": false
+          },
+          "VAL_1622c689-cb334af2": {
+            "id": "VAL_1622c689-cb334af2",
+            "type": "svg-ext-value",
+            "name": "output_1",
+            "property": {
+              "variableId": "t_22991f01-9eee4767",
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "textId": null,
+                  "color": "",
+                  "type": 1,
+                  "stroke": "",
+                  "fractionDigitsId": null
+                }
+              ],
+              "events": [],
+              "actions": []
+            },
+            "label": "Value",
+            "hide": false,
+            "lock": false
+          }
+        },
+        "variables": {},
+        "svgcontent": "<svg width=\"1024\" height=\"768\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns:html=\"http://www.w3.org/1999/xhtml\">\n <filter height=\"200\" width=\"200\" y=\"-3\" x=\"-3\" id=\"blur-filter\">\n  <feGaussianBlur stdDeviation=\"3\"/>\n </filter>\n <g>\n  <title>Layer 1</title>\n  <text id=\"svg_ep3_label\" x=\"660\" y=\"88\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"24\" fill=\"#9A6B45\" stroke-width=\"0\">Batches logged</text>\n  <g stroke=\"#FFFFFF\" fill=\"#7B4B2A\" type=\"svg-ext-html_button\" id=\"HXB_11b245bf-10b34d31\">\n   <rect id=\"svg_6fa4d3c0-d02942ed\" height=\"120\" width=\"320\" y=\"60\" x=\"60\" stroke-width=\"0\"/>\n   <foreignObject font-size=\"36\" id=\"H-HXB_010785a4-95924ee3\" width=\"320\" height=\"120\" y=\"60\" x=\"60\">\n    <BUTTON style=\"width: calc(100% - 6px); height: calc(100% - 6px); text-align: center; background-color: #7B4B2A; color: #FFFFFF; font-size: 36px; font-weight: bold; font-family: sans-serif;\" class=\"md-btn  md-btn-raised\" id=\"B-HXB_010785a4-95924ee3\">New batch</BUTTON>\n   </foreignObject>\n  </g>\n  <g data-name=\"table_1\" id=\"OXC_c4120277-10144e5b\" type=\"svg-ext-own_ctrl-table\" fill=\"#FFFFFF\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"right\" stroke=\"#000000\">\n   <rect stroke-width=\"0\" x=\"60\" y=\"230\" width=\"879\" height=\"498.00002\" id=\"svg_2d8aaf20-44a74cf1\" stroke=\"null\"/>\n   <foreignObject x=\"60\" y=\"230\" height=\"498.00002\" width=\"879\" id=\"H-OXC_4fccd139-34a040e5\">\n    <DIV style=\"width: 100%; height: 100%; vector-effect: non-scaling-stroke;\" id=\"D-OXC_4fccd139-34a040e5\">\n     <APP-DATA-TABLE class=\"ng-star-inserted\">\n      <DIV style=\"background-color: rgb(249, 249, 249);\" class=\"table-toolbar ng-star-inserted\">\n       <!---->\n       <DIV class=\"date-range ng-star-inserted\">\n        <!---->\n        <DIV class=\"ng-star-inserted\">\n         <BUTTON style=\"color: rgb(0, 0, 0); background-color: rgb(249, 249, 249);\" class=\"moka-toolbar-editor moka-toolbar-select\"/>\n         <BUTTON style=\"color: rgb(0, 0, 0); background-color: rgb(249, 249, 249);\" class=\"moka-toolbar-editor moka-toolbar-button\">\n          <MAT-ICON data-mat-icon-type=\"font\" aria-hidden=\"true\" class=\"mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color\" aria-label=\"time range\" role=\"img\">access_time</MAT-ICON>\n         </BUTTON>\n         <BUTTON style=\"color: rgb(0, 0, 0); background-color: rgb(249, 249, 249);\" class=\"moka-toolbar-editor moka-toolbar-button\">\n          <MAT-ICON data-mat-icon-type=\"font\" aria-hidden=\"true\" class=\"mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color\" aria-label=\"export data\" role=\"img\">vertical_align_bottom</MAT-ICON>\n         </BUTTON>\n        </DIV>\n        <!---->\n       </DIV>\n       <!---->\n       <!---->\n      </DIV>\n      <!---->\n      <DIV style=\"height: calc(100% - 42px);\" class=\"data-table-scroll\">\n       <MAT-TABLE style=\"background-color: rgb(249, 249, 249); --mat-table-row-item-outline-color: #E0E0E0; --mdc-data-table-row-divider-color: #E0E0E0;\" role=\"table\" class=\"mat-mdc-table mdc-data-table__table cdk-table mat-sort\">\n        <!---->\n        <!---->\n        <MAT-HEADER-ROW style=\"height: 30px; background-color: rgb(240, 240, 240); border-bottom: 1px solid rgb(224, 224, 224); display: flex; top: 0px; z-index: 100;\" class=\"mat-mdc-header-row mdc-data-table__header-row cdk-header-row mat-row data-table-header ng-star-inserted mat-mdc-table-sticky mat-mdc-table-sticky-border-elem-top\" role=\"row\">\n         <TH style=\"width: 100px; color: rgb(117, 117, 117); text-align: left; font-size: 12px;\" aria-sort=\"none\" class=\"mat-sort-header ng-tns-c1137168538-39 ng-star-inserted\">\n          <DIV role=\"button\" tabindex=\"0\" cdk-describedby-host=\"ng-1\" aria-describedby=\"cdk-describedby-message-ng-1-97\" class=\"mat-sort-header-container mat-focus-indicator ng-tns-c1137168538-39\">\n           <DIV class=\"mat-sort-header-content ng-tns-c1137168538-39\">Cooked at</DIV>\n           <DIV style=\"transform: translateY(25%); opacity: 0;\" class=\"mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c1137168538-39 ng-star-inserted\">\n            <DIV class=\"mat-sort-header-stem ng-tns-c1137168538-39\"></DIV>\n            <DIV style=\"transform: translateY(0px);\" class=\"mat-sort-header-indicator ng-tns-c1137168538-39 ng-trigger ng-trigger-indicator\">\n             <DIV style=\"transform: rotate(-45deg);\" class=\"mat-sort-header-pointer-left ng-tns-c1137168538-39 ng-trigger ng-trigger-leftPointer\"></DIV>\n             <DIV style=\"transform: rotate(45deg);\" class=\"mat-sort-header-pointer-right ng-tns-c1137168538-39 ng-trigger ng-trigger-rightPointer\"></DIV>\n             <DIV class=\"mat-sort-header-pointer-middle ng-tns-c1137168538-39\"></DIV>\n            </DIV>\n           </DIV>\n           <!---->\n          </DIV>\n         </TH>\n         <TH style=\"width: 100px; color: rgb(117, 117, 117); text-align: left; font-size: 12px;\" aria-sort=\"none\" class=\"mat-sort-header ng-tns-c1137168538-40 ng-star-inserted\">\n          <DIV role=\"button\" tabindex=\"0\" cdk-describedby-host=\"ng-1\" aria-describedby=\"cdk-describedby-message-ng-1-97\" class=\"mat-sort-header-container mat-focus-indicator ng-tns-c1137168538-40\">\n           <DIV class=\"mat-sort-header-content ng-tns-c1137168538-40\">Batch #</DIV>\n           <DIV style=\"transform: translateY(25%); opacity: 0;\" class=\"mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c1137168538-40 ng-star-inserted\">\n            <DIV class=\"mat-sort-header-stem ng-tns-c1137168538-40\"></DIV>\n            <DIV style=\"transform: translateY(0px);\" class=\"mat-sort-header-indicator ng-tns-c1137168538-40 ng-trigger ng-trigger-indicator\">\n             <DIV style=\"transform: rotate(-45deg);\" class=\"mat-sort-header-pointer-left ng-tns-c1137168538-40 ng-trigger ng-trigger-leftPointer\"></DIV>\n             <DIV style=\"transform: rotate(45deg);\" class=\"mat-sort-header-pointer-right ng-tns-c1137168538-40 ng-trigger ng-trigger-rightPointer\"></DIV>\n             <DIV class=\"mat-sort-header-pointer-middle ng-tns-c1137168538-40\"></DIV>\n            </DIV>\n           </DIV>\n           <!---->\n          </DIV>\n         </TH>\n         <!---->\n        </MAT-HEADER-ROW>\n        <!---->\n        <!---->\n        <!---->\n        <!---->\n        <!---->\n       </MAT-TABLE>\n      </DIV>\n      <!---->\n      <!---->\n     </APP-DATA-TABLE>\n    </DIV>\n   </foreignObject>\n  </g>\n  <g xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" stroke-width=\"0\" font-size=\"80\" stroke=\"#000000\" fill=\"#7B4B2A\" y=\"165\" x=\"660\" type=\"svg-ext-value\" id=\"VAL_1622c689-cb334af2\">\n   <text y=\"165\" x=\"660\" xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"80\" stroke=\"#000000\" fill=\"#7B4B2A\" font-weight=\"bold\" id=\"VAL_d2708a2e-8a644f75\" stroke-width=\"0\">##.##</text>\n  </g>\n </g>\n</svg>",
+        "type": "svg"
+      },
+      {
+        "id": "v_ep4-how-to",
+        "name": "How-to",
+        "profile": {
+          "width": 1024,
+          "height": 768,
+          "bkcolor": "#fff3dcff",
+          "margin": 10,
+          "align": "topCenter",
+          "gridType": "fixed",
+          "viewRenderDelay": 0
+        },
+        "items": {
+          "OXC_0d6a888c-28e9457f": {
+            "id": "OXC_0d6a888c-28e9457f",
+            "type": "svg-ext-own_ctrl-video",
+            "name": "shape_1",
+            "property": {
+              "events": [],
+              "actions": [
+                {
+                  "variableId": "t_1d5eccce-8fd44e71",
+                  "range": {
+                    "min": 1,
+                    "max": 1000000000
+                  },
+                  "type": "start",
+                  "options": {}
+                }
+              ],
+              "options": {
+                "address": "/_images/how-to/cup_sealer.mp4",
+                "showControls": true,
+                "loop": true
+              },
+              "variableId": "t_ba874ae3-07da4f3a"
+            },
+            "label": "HtmlVideo",
+            "hide": false,
+            "lock": false
+          },
+          "HXB_a5b909b6-f4d84482": {
+            "id": "HXB_a5b909b6-f4d84482",
+            "type": "svg-ext-html_button",
+            "name": "button_1",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [
+                {
+                  "type": "click",
+                  "action": "onSetValue",
+                  "actparam": "/_images/how-to/cup_sealer.mp4",
+                  "actoptions": {
+                    "variable": {
+                      "variableId": "t_ba874ae3-07da4f3a",
+                      "variableRaw": {
+                        "id": "t_ba874ae3-07da4f3a",
+                        "name": "video_url",
+                        "value": "/_images/how-to/cup_sealer.mp4",
+                        "type": "string",
+                        "daq": {
+                          "enabled": false,
+                          "interval": 60,
+                          "changed": false,
+                          "restored": false
+                        },
+                        "init": "/_images/how-to/cup_sealer.mp4",
+                        "description": null,
+                        "timestamp": 1795148498269
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "click",
+                  "action": "onSetValue",
+                  "actparam": "1",
+                  "actoptions": {
+                    "function": "add",
+                    "variable": {
+                      "variableId": "t_1d5eccce-8fd44e71",
+                      "variableRaw": {
+                        "id": "t_1d5eccce-8fd44e71",
+                        "name": "video_play",
+                        "value": null,
+                        "type": "number",
+                        "daq": {
+                          "enabled": false,
+                          "interval": 60,
+                          "changed": false,
+                          "restored": false
+                        },
+                        "init": null,
+                        "description": null
+                      }
+                    }
+                  }
+                }
+              ],
+              "actions": [],
+              "text": "Cup sealer"
+            },
+            "label": "HtmlButton",
+            "hide": false,
+            "lock": false
+          },
+          "HXB_50e14259-06df4bc3": {
+            "id": "HXB_50e14259-06df4bc3",
+            "type": "svg-ext-html_button",
+            "name": "button_2",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [
+                {
+                  "type": "click",
+                  "action": "onSetValue",
+                  "actparam": "/_images/how-to/cook_boba.mp4",
+                  "actoptions": {
+                    "variable": {
+                      "variableId": "t_ba874ae3-07da4f3a",
+                      "variableRaw": {
+                        "id": "t_ba874ae3-07da4f3a",
+                        "name": "video_url",
+                        "value": "/_images/how-to/cup_sealer.mp4",
+                        "type": "string",
+                        "daq": {
+                          "enabled": false,
+                          "interval": 60,
+                          "changed": false,
+                          "restored": false
+                        },
+                        "init": "/_images/how-to/cup_sealer.mp4",
+                        "description": null,
+                        "timestamp": 1795148498269
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "click",
+                  "action": "onSetValue",
+                  "actparam": "1",
+                  "actoptions": {
+                    "function": "add",
+                    "variable": {
+                      "variableId": "t_1d5eccce-8fd44e71",
+                      "variableRaw": {
+                        "id": "t_1d5eccce-8fd44e71",
+                        "name": "video_play",
+                        "value": null,
+                        "type": "number",
+                        "daq": {
+                          "enabled": false,
+                          "interval": 60,
+                          "changed": false,
+                          "restored": false
+                        },
+                        "init": null,
+                        "description": null
+                      }
+                    }
+                  }
+                }
+              ],
+              "actions": [],
+              "text": "Cook boba"
+            },
+            "label": "HtmlButton",
+            "hide": false,
+            "lock": false
+          },
+          "HXB_f3739973-48714e25": {
+            "id": "HXB_f3739973-48714e25",
+            "type": "svg-ext-html_button",
+            "name": "button_3",
+            "property": {
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 80,
+                  "color": "",
+                  "type": 2,
+                  "stroke": ""
+                }
+              ],
+              "events": [
+                {
+                  "type": "click",
+                  "action": "onSetValue",
+                  "actparam": "/_images/how-to/closing_up.mp4",
+                  "actoptions": {
+                    "variable": {
+                      "variableId": "t_ba874ae3-07da4f3a",
+                      "variableRaw": {
+                        "id": "t_ba874ae3-07da4f3a",
+                        "name": "video_url",
+                        "value": "/_images/how-to/cup_sealer.mp4",
+                        "type": "string",
+                        "daq": {
+                          "enabled": false,
+                          "interval": 60,
+                          "changed": false,
+                          "restored": false
+                        },
+                        "init": "/_images/how-to/cup_sealer.mp4",
+                        "description": null,
+                        "timestamp": 1795148498269
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "click",
+                  "action": "onSetValue",
+                  "actparam": "1",
+                  "actoptions": {
+                    "function": "add",
+                    "variable": {
+                      "variableId": "t_1d5eccce-8fd44e71",
+                      "variableRaw": {
+                        "id": "t_1d5eccce-8fd44e71",
+                        "name": "video_play",
+                        "value": null,
+                        "type": "number",
+                        "daq": {
+                          "enabled": false,
+                          "interval": 60,
+                          "changed": false,
+                          "restored": false
+                        },
+                        "init": null,
+                        "description": null
+                      }
+                    }
+                  }
+                }
+              ],
+              "actions": [],
+              "text": "Closing up"
+            },
+            "label": "HtmlButton",
+            "hide": false,
+            "lock": false
+          }
+        },
+        "variables": {},
+        "svgcontent": "<svg width=\"1024\" height=\"768\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns:html=\"http://www.w3.org/1999/xhtml\">\n <filter height=\"200\" width=\"200\" y=\"-3\" x=\"-3\" id=\"blur-filter\">\n  <feGaussianBlur stdDeviation=\"3\"/>\n </filter>\n <g>\n  <title>Layer 1</title>\n  <rect fill=\"#222831ff\" stroke=\"#ffffffff\" stroke-width=\"0\" x=\"346\" y=\"124\" width=\"646\" height=\"370\" id=\"svg_1a5b3c53-fbac426d\" rx=\"12\" ry=\"12\"/>\n  <rect fill=\"#7b4b2aff\" stroke=\"#000000\" x=\"0\" y=\"0\" width=\"1024\" height=\"96\" id=\"svg_42a05d07-0baf4fe0\" stroke-width=\"0\"/>\n  <g data-name=\"shape_1\" stroke=\"#000000\" text-anchor=\"right\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#FFFFFF\" type=\"svg-ext-own_ctrl-video\" id=\"OXC_0d6a888c-28e9457f\">\n   <rect stroke=\"null\" id=\"svg_35e7ec2f-77d845a0\" height=\"353.99999\" width=\"629.99998\" y=\"132\" x=\"354\" stroke-width=\"0\"/>\n   <foreignObject id=\"H-OXC_74ebd31b-726b4402\" width=\"629.99998\" height=\"353.99999\" y=\"132\" x=\"354\">\n    <DIV style=\"width: 100%; height: 100%; vector-effect: non-scaling-stroke;\" id=\"D-OXC_74ebd31b-726b4402\">\n     <VIDEO style=\"width: 100%; height: 100%; object-fit: contain; display: block;\" playsinline=\"true\">\n      <SOURCE type=\"video/mp4\" src=\"http://127.0.0.1:1897/_images/how-to/cup_sealer.mp4\"/>\n     </VIDEO>\n    </DIV>\n   </foreignObject>\n  </g>\n  <g stroke=\"rgba(0, 0, 0, 0)\" fill=\"rgba(0, 0, 0, 0)\" type=\"svg-ext-html_button\" id=\"HXB_a5b909b6-f4d84482\">\n   <rect id=\"svg_2a58c96a-a1434d27\" height=\"100\" width=\"280\" y=\"130\" x=\"40\" stroke-width=\"0\"/>\n   <foreignObject id=\"H-HXB_a1544a0a-95e64c6f\" width=\"280\" height=\"100\" y=\"130\" x=\"40\" font-size=\"30\">\n    <BUTTON style=\"width: calc(100% - 6px); height: calc(100% - 6px); text-align: center; background-color: rgb(61, 190, 122); color: rgb(255, 255, 255); font-size: 30px; font-family: Quicksand-Bold;\" class=\"md-btn  md-btn-raised\" id=\"B-HXB_a1544a0a-95e64c6f\">Cup sealer</BUTTON>\n   </foreignObject>\n  </g>\n  <g stroke=\"rgba(0, 0, 0, 0)\" fill=\"rgba(0, 0, 0, 0)\" type=\"svg-ext-html_button\" id=\"HXB_50e14259-06df4bc3\">\n   <rect id=\"svg_7bec555d-7c234b7b\" height=\"100\" width=\"280\" y=\"260\" x=\"40\" stroke-width=\"0\"/>\n   <foreignObject id=\"H-HXB_834dc2e0-e68042f9\" width=\"280\" height=\"100\" y=\"260\" x=\"40\" font-size=\"30\">\n    <BUTTON style=\"width: calc(100% - 6px); height: calc(100% - 6px); text-align: center; background-color: rgb(123, 75, 42); color: rgb(255, 255, 255); font-size: 30px; font-family: Quicksand-Bold;\" class=\"md-btn  md-btn-raised\" id=\"B-HXB_834dc2e0-e68042f9\">Cook boba</BUTTON>\n   </foreignObject>\n  </g>\n  <g stroke=\"rgba(0, 0, 0, 0)\" fill=\"rgba(0, 0, 0, 0)\" type=\"svg-ext-html_button\" id=\"HXB_f3739973-48714e25\">\n   <rect id=\"svg_b007bc2e-397b498c\" height=\"100\" width=\"280\" y=\"390\" x=\"40\" stroke-width=\"0\"/>\n   <foreignObject id=\"H-HXB_077f8d40-3c584bed\" width=\"280\" height=\"100\" y=\"390\" x=\"40\" font-size=\"30\">\n    <BUTTON style=\"width: calc(100% - 6px); height: calc(100% - 6px); text-align: center; background-color: rgb(47, 128, 237); color: rgb(255, 255, 255); font-size: 30px; font-family: Quicksand-Bold;\" class=\"md-btn  md-btn-raised\" id=\"B-HXB_077f8d40-3c584bed\">Closing up</BUTTON>\n   </foreignObject>\n  </g>\n  <text fill=\"#ffffffff\" stroke=\"#000000\" stroke-width=\"0\" x=\"257\" y=\"63\" id=\"svg_c8989faf-34714cae\" font-size=\"40\" font-family=\"Quicksand-Bold\" text-anchor=\"middle\" xml:space=\"preserve\">Leo BoBa Tea · How-to</text>\n  <text fill=\"#f4e3c8ff\" stroke=\"#000000\" stroke-width=\"0\" x=\"879\" y=\"61\" id=\"svg_aeb696da-e6b54e40\" font-size=\"24\" font-family=\"Quicksand-Medium\" text-anchor=\"middle\" xml:space=\"preserve\">tap a task, it plays</text>\n  <text fill=\"#5b6270ff\" stroke=\"#ffffffff\" stroke-width=\"0\" x=\"591\" y=\"541\" id=\"svg_e28869fa-586e4322\" font-size=\"26\" font-family=\"Quicksand-Medium\" text-anchor=\"middle\" xml:space=\"preserve\">Tap a button. The video plays by itself.</text>\n  <text fill=\"#5b6270ff\" stroke=\"#ffffffff\" stroke-width=\"0\" x=\"559\" y=\"581\" id=\"svg_4897f7c0-0ca444f7\" font-size=\"22\" font-family=\"Quicksand-Medium\" text-anchor=\"middle\" xml:space=\"preserve\">Tap the video for pause and full screen.</text>\n  <text fill=\"#7b4b2aff\" stroke=\"#ffffffff\" stroke-width=\"0\" x=\"879\" y=\"737\" id=\"svg_cc812b8e-b9a04a25\" font-size=\"22\" font-family=\"Quicksand-Medium\" text-anchor=\"middle\" xml:space=\"preserve\">fresh · shaken · daily</text>\n </g>\n</svg>",
+        "type": "svg",
+        "property": {
+          "events": [],
+          "actions": []
+        }
+      }
+    ],
+    "layout": {
+      "autoresize": false,
+      "start": "v_098a448b-b707",
+      "navigation": {
+        "mode": "over",
+        "type": "block",
+        "bkcolor": "#F4F5F7",
+        "fgcolor": "#1D1D1D",
+        "items": [
+          {
+            "icon": "arrow_drop_down_circle",
+            "view": "v_098a448b-b707",
+            "link": "",
+            "text": "1 Select value"
+          },
+          {
+            "icon": "storefront",
+            "view": "v_ep2-door-hours",
+            "link": "",
+            "text": "Door sign"
+          },
+          {
+            "icon": "schedule",
+            "view": "v_811354ab10-10610",
+            "link": "",
+            "text": "2 Opening hours"
+          },
+          {
+            "icon": "table_chart",
+            "view": "v_ep3-boba-log",
+            "link": "",
+            "text": "3 Boba log"
+          },
+          {
+            "icon": "smart_display",
+            "view": "v_ep4-how-to",
+            "link": "",
+            "text": "4 How-to"
+          }
+        ],
+        "logo": false
+      },
+      "header": {
+        "bkcolor": "#ffffff",
+        "fgcolor": "#000000",
+        "height": 46,
+        "buttonHeight": 36,
+        "fontSize": 13,
+        "itemsAnchor": "left"
+      },
+      "showdev": true,
+      "inputdialog": "false",
+      "hidenavigation": false,
+      "theme": "",
+      "loginonstart": false,
+      "loginoverlaycolor": "none",
+      "show_connection_error": true,
+      "customStyles": ""
+    }
+  },
+  "recipes": [],
+  "ar": {
+    "enabled": false,
+    "markers": []
+  },
+  "version": "1.00",
+  "server": {
+    "id": "0",
+    "name": "FUXA Server",
+    "type": "FuxaServer",
+    "property": {}
+  }
+}
